@@ -1916,7 +1916,7 @@ function tryToGuess(num) {
     setTimeout(() => {
         startTheGame();
         removeTheStyleFromButton(num, check);
-    }, 3000)
+    }, 2000)
 }
 
 function checkIfRightGuess(num) {
@@ -1933,8 +1933,8 @@ function removeTheStyleFromButton(num, isTrue) {
 
 function startTheTimer() {
     timeoutSpan.style.visibility = 'visible';
-    timeoutSpan.innerHTML = 3;
-    let timeout = 3;
+    timeoutSpan.innerHTML = 2;
+    let timeout = 2;
     const interval = setInterval(() => {
         if (timeout === 1) {
             clearInterval(interval);
