@@ -1,0 +1,49 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Guess the country</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+</head>
+<body>
+<h1 class="text-center mt-8 text-2xl font-bold text-cyan-500">Guess the country name</h1>
+<p id="guessCount" class="text-center mt-4 font-bold"></p>
+
+<span id="timeout" class="absolute top-16 right-2 text-red-500 font-bold bg-red-100 rounded-full px-3 py-1 invisible"></span>
+
+<!--  <div class="absolute bottom-0 left-0 w-full">-->
+<!--    <button-->
+<!--      (click)="next()"-->
+<!--      class="w-full bg-black text-white py-4 font-bold text-2xl"-->
+<!--      role="button">-->
+<!--      {{ 'Next' }}-->
+<!--    </button>-->
+<!--  </div>-->
+
+
+<p class="text-center font-bold text-sm invisible"></p>
+
+<button id="startBtn" class="absolute top-1/2 left-2/4 -translate-y-1/2 -translate-x-1/2 bg-white hover:bg-gray-100 text-gray-800 font-semibold py-4 px-20 border border-gray-400 rounded shadow">
+    Start
+</button>
+
+<div id="flagContainer" class="flex items-center justify-center -mt-12 invisible">
+    <img width="320" height="320" alt="Flag" src="">
+</div>
+
+<div id="answerButtons" class="flex flex-col items-center justify-center gap-4 invisible">
+    <button class="button-60"
+            role="button"></button>
+
+    <button class="button-60"
+            role="button"></button>
+
+    <button class="button-60"
+            role="button"></button>
+</div>
+
+
+<script type="module" src="script.js"></script>
+</body>
+</html>
